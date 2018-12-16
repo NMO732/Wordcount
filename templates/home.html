@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Screen</title>
+</head>
+<body>
+<h1> {{ name }} This is Home Page Template </h1>
+
+<form action="{% url 'count' %}">
+    <textarea name="fulltextarea" cols=45 rows=15></textarea>
+    <input type="Submit" value="Count"/>
+</form>
+</body>
+</html>

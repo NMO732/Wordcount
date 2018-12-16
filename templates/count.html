@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Countsss</title>
+</head>
+<body>
+<h1>Words Count</h1>  <a href="{% url 'home' %}"> Back To Home Page </a>
+<br>
+{{  fulltext }}<br>
+<h2> The Total number of words : {{ words }}</h2>
+{% for word,value in worddictionary %}
+{{ word }} ={{ value }}
+<br>
+{% endfor %}
+<br>
+</body>
+</html>
